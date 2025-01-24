@@ -1,0 +1,185 @@
+
+.body {
+    background: rgb(244, 244, 14);
+    background: linear-gradient(0deg, rgba(244, 244, 14, 1) 35%, rgba(255, 255, 250, 1) 63%);
+    font-family: 'Poppins', sans-serif; /* Fonte amigável */
+    color: #333; /* Cor do texto padrão */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para o cabeçalho */
+.header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 600; /* Peso mais grosso para destaque */
+}
+
+.header p {
+    font-size: 1.2em;
+    font-weight: 300; /* Peso mais leve */
+}
+
+/* Estilo para a área de formulários com fundo branco */
+.form-container {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff; /* Fundo branco */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-container p {
+    font-size: 1.1em;
+    font-weight: 400;
+}
+
+.form-container input[type="text"],
+.form-container input[type="date"] {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc; /* Borda padrão */
+    font-size: 1em;
+    background-color: #fff; /* Fundo branco */
+    color: #333; /* Texto escuro */
+    box-sizing: border-box;
+    transition: border 0.3s ease;
+    font-family: 'Poppins', sans-serif; /* Aplica a fonte nas caixas de entrada */
+}
+
+/* Efeito quando o campo é focado */
+.form-container input[type="text"]:focus,
+.form-container input[type="date"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Estilo para o rodapé */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9em;
+}
+
+.footer h5 {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.footer a {
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Ajuste do título com ícone */
+.header h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Espaço entre o ícone e o texto */
+    font-size: 2.5em;
+    font-weight: 600;
+    color: white;
+    margin: 0;
+}
+
+.logo-icon img {
+    width: 40px; /* Tamanho do ícone */
+    height: 40px;
+    background-color: #ff4d4d; /* Fundo opcional */
+    border-radius: 50%; /* Forma circular */
+    padding: 5px; /* Espaçamento interno */
+}
+
+/* Responsividade para telas menor
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2em; /* Reduz o tamanho do título */
+    }
+
+    .form-container {
+        padding: 15px; /* Reduz o espaçamento interno */
+    }
+
+    .form-container input[type="text"],
+    .form-container input[type="date"] {
+        padding: 10px; /* Reduz o espaçamento das entradas */
+        font-size: 0.9em; /* Reduz o tamanho da fonte */
+    }
+
+    .footer h5 {
+        font-size: 1em; /* Ajusta o tamanho do texto */
+    }
+
+    .footer img {
+        width: 30px; /* Reduz o tamanho dos ícones */
+        height: 30px;
+    }
+
+    .logo-icon img {
+        width: 30px; /* Reduz o tamanho do ícone no cabeçalho */
+        height: 30px;
+    }
+}
+
+/* Responsividade para telas muito pequenas (smartphones menores) */
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 1.8em; /* Ainda menor para se ajustar à tela */
+    }
+
+    .form-container input[type="text"],
+    .form-container input[type="date"] {
+        padding: 8px;
+        font-size: 0.85em;
+    }
+
+    .footer h5 {
+        font-size: 0.9em;
+    }
+
+    .footer img {
+        width: 25px;
+        height: 25px;
+    }
+}
+.form-button {
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-button:hover {
+    background-color: #0056b3;
+}
+
+
